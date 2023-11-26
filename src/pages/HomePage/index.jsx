@@ -3,9 +3,14 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Line, List, Text } from "components";
+import BackToTopButton from "../../components/BacToTop"; // Adjust the import path accordingly
 
 const HomePagePage = () => {
   const navigate = useNavigate();
+  const handleLearnMoreClick = () => {
+    // Add any additional logic you may need
+    navigate("/homechefrecipe");
+  };
 
   return (
     <>
@@ -743,8 +748,9 @@ const HomePagePage = () => {
             <div className="h-[578px] md:h-[789px] max-w-[1316px] mt-[234px] mx-auto md:px-5 relative w-full">
               <div
                 className="common-pointer flex flex-col h-full items-start justify-start ml-9 my-auto w-[39%]"
-                onClick={() => navigate("/homechefrecipe")}
+                onClick={handleLearnMoreClick}
               >
+                {/* Your existing component code */}
                 <Text
                   className="text-5xl sm:text-[38px] md:text-[44px] text-black-900 tracking-[-1.92px]"
                   size="txtInterSemiBold48"
@@ -770,8 +776,7 @@ const HomePagePage = () => {
                   </a>
                 </div>
               </div>
-              <div className="absolute md:h-[555px] h-[578px] inset-[0] justify-center m-auto w-full">
-                <div className="absolute bg-gradient  bottom-[0] h-[402px] inset-x-[0] mx-auto rounded-[30px] w-full"></div>
+              <div style={{ backgroundColor: "#FFC0CB" }}>
                 <Img
                   className="absolute h-[555px] inset-y-[0] my-auto object-cover right-[4%] rounded-[52px] w-[49%]"
                   src="images/img_portraithappy.png"
@@ -779,9 +784,7 @@ const HomePagePage = () => {
                 />
               </div>
             </div>
-            <div className="bg-indigo-100 flex flex-col items-center justify-start md:ml-[0] ml-[99px] mr-[1232px] mt-[115px] p-[15px] md:px-5 rounded-[29px] w-[5%] md:w-full">
-              <Line className="bg-black-900 h-[26px] rotate-[88deg] shadow-bs1 w-0.5" />
-            </div>
+            <BackToTopButton />
             <div className="flex flex-col font-lobster items-center justify-start max-w-7xl mt-[85px] mx-auto md:px-5 w-full">
               <div className="flex flex-col items-end justify-start w-full">
                 <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-[99%] md:w-full">
