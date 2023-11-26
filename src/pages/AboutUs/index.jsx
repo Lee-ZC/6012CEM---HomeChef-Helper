@@ -94,7 +94,7 @@ const AboutUsPage = () => {
             <Line className="absolute bg-black-900_19 h-px inset-[0] justify-center m-auto w-full" />
           </div>
           <div className="flex md:flex-col flex-row md:gap-10 items-end justify-between max-w-[1217px] mt-[132px] mx-auto md:px-5 w-full">
-            <div className="h-[472px] md:mt-0 mt-[21px] relative w-[33%] md:w-full">
+            <div className="h-[472px] md:mt-0 mt-[21px] relative w-[70%] md:w-full">
               <div className="absolute bg-gradient  bottom-[0] h-[432px] inset-x-[0] mx-auto rounded-[30px] w-full"></div>
               <div className="absolute h-[472px] inset-[0] justify-center m-auto w-[88%]">
                 <Img
@@ -128,13 +128,11 @@ const AboutUsPage = () => {
                 className="leading-[28.00px] text-base text-black-900_99 w-full"
                 size="txtInterRegular16"
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                The purpose of HomeChef Helper website is to make cooking at
+                home enjoyable and accessible for everyone. By offering
+                personalized recipe recommendations, easy meal planning tools,
+                and clear step-by-step instructions, the website aims to
+                simplify the cooking experience.
               </Text>
             </div>
           </div>

@@ -27,7 +27,7 @@ const ProjectRoutes = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<ErrorPage />} />
           <Route path="/favoutite" element={<Favoutite />} />
           <Route path="/cta" element={<CTA />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
