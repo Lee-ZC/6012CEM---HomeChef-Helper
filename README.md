@@ -1,8 +1,8 @@
-## homechef_helper
+## HomeChef_Helper
 The HomeChef Helper website falls into the category of a "Food and Recipe" website. It serves as a digital platform focused on providing users with tools and resources to enhance user at home cooking experience. The website likely includes features such as personalized recipe recommendations, meal planning tools, step-by-step cooking instructions, and a community for sharing culinary tips and experiences. It aligns with the broader category of lifestyle and cooking websites that cater to individuals interested in improving their culinary skills, exploring new recipes, and connecting with a community of like-minded home cooks.
 
 
-## Description
+## Purpose
 
 The purpose of HomeChef Helper website is to make cooking at home enjoyable and accessible for everyone. By offering personalized recipe recommendations, easy meal planning tools, and clear step-by-step instructions, the website aims to simplify the cooking experience.
 
