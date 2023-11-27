@@ -80,6 +80,7 @@ const AdminDashboardPage = () => {
             <div className="flex md:flex-col flex-row gap-5 items-start justify-between w-full">
               <div className="h-[179px] relative w-[28%] md:w-full">
                 <div className="absolute bg-white-A700 h-[179px] inset-[0] justify-center m-auto rounded-[14px] w-[98%]"></div>
+
                 <div className="absolute h-10 inset-x-[0] mx-auto px-4 top-[13%] w-[99%]">
                   <div className="bg-blue-A400_63 h-10 m-auto rounded w-[85%]"></div>
                   <div className="absolute flex flex-row gap-6 h-max inset-y-[0] items-start justify-center left-[15%] my-auto w-[45%]">
@@ -96,6 +97,12 @@ const AdminDashboardPage = () => {
                     </Text>
                   </div>
                 </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+
                 <Button
                   className="common-pointer bg-transparent bottom-[28%] cursor-pointer flex inset-x-[0] items-center justify-center mb-[51px] min-w-[258px] mx-auto"
                   onClick={() => navigate("/adminhandlerecipe")}
@@ -108,11 +115,12 @@ const AdminDashboardPage = () => {
                   }
                   size="xs"
                 >
-                  <div className="font-medium text-black-900_dd text-left text-sm tracking-[0.10px]">
-                    Recipe
+                  <div className="absolute flex flex-row gap-6 h-max inset-y-[0] items-start justify-center left-[15%] my-auto w-[45%]">
+                    <p>Recipe handle</p>
                   </div>
                 </Button>
               </div>
+
               <div className="bg-white-A700 flex md:flex-1 flex-col items-center justify-start p-[11px] rounded-[14px] w-[71%] md:w-full">
                 <div className="flex flex-col justify-start mb-[42px] mt-1.5 w-full">
                   <div className="flex flex-col gap-3.5 items-start justify-start md:ml-[0] ml-[22px]">
@@ -126,7 +134,7 @@ const AdminDashboardPage = () => {
                       className="text-base text-blue_gray-400 tracking-[0.16px]"
                       size="txtRobotoRegular16"
                     >
-                      Type og recipe
+                      Type of recipe
                     </Text>
                   </div>
                   <div className="flex sm:flex-col flex-row sm:gap-10 items-center justify-between mt-[22px] w-full">

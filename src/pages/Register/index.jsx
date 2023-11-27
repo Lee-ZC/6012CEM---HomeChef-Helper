@@ -5,9 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { Button, Img, Input, SelectBox, Text } from "components";
 
 const passwordOneOptionsList = [
-  { label: "Option1", value: "option1" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
+  { label: "user", value: "option1" },
+  { label: "Admin", value: "option2" },
 ];
 
 const RegisterPage = () => {
@@ -27,7 +26,7 @@ const RegisterPage = () => {
             className="mt-9 text-base text-center text-white-A700"
             size="txtLexendDecaRegular16WhiteA700"
           >
-            Register and start managing your candidates!
+            Register an account!
           </Text>
           <div className="flex flex-col items-center justify-start mt-[31px] w-[84%] md:w-full">
             <div className="flex flex-col gap-8 items-center justify-start w-full">

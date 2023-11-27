@@ -230,22 +230,22 @@ const AdminhandlerecipePage = () => {
             <div className="flex md:flex-1 flex-col md:gap-10 gap-[578px] justify-start md:mt-0 mt-[22px] w-1/5 md:w-full">
               <div className="h-[179px] ml-3.5 md:ml-[0] relative w-[95%]">
                 <div className="absolute bg-white-A700 h-[179px] inset-[0] justify-center m-auto rounded-[14px] w-[98%]"></div>
+
                 <Button
                   className="common-pointer bg-transparent cursor-pointer flex inset-x-[0] items-center justify-center min-w-[258px] mt-6 mx-auto top-[13%]"
                   onClick={() => navigate("/admindashboard")}
                   leftIcon={
                     <Img
-                      className="h-6 mr-6 right-[9%] absolute"
+                      className="h-6 mr-6 right-[65%] absolute"
                       src="images/img_icon_action_dashboard_gray_500_01.svg"
                       alt="icon/action/dashboard"
                     />
                   }
                   size="xs"
-                >
-                  <div className="font-medium text-gray-500 text-left text-sm tracking-[0.10px]">
-                    Dashboard
-                  </div>
-                </Button>
+                ></Button>
+                <div className="absolute flex flex-row gap-6 h-max inset-y-[0] items-start justify-center left-[30%] my-auto w-[45%] top-[-65%]">
+                  <p>Dashboard</p>
+                </div>
                 <div className="absolute bottom-[28%] h-10 md:h-6 inset-x-[0] mx-auto p-2 w-[99%]">
                   <div className="absolute flex flex-row gap-6 h-max inset-y-[0] items-center justify-center left-[15%] my-auto w-[36%]">
                     <Img
