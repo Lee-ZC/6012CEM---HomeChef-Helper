@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Line, List, Text } from "components";
 import BackToTopButton from "../../components/BacToTop"; // Adjust the import path accordingly
+import CTAPage from "../CTA"; // Adjust the import path
 
 const HomePagePage = () => {
   const navigate = useNavigate();
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearch = () => {
+    const searchTermString = String(searchTerm).trim();
+
+    if (searchTermString) {
+      navigate(`/${encodeURIComponent(searchTermString)}`);
+    }
+  };
+
+  const handleKeyPress = (e) => {
+    // If the user presses Enter, trigger the search
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
+
   const handleLearnMoreClick = () => {
     // Add any additional logic you may need
     navigate("/homechefrecipe");
@@ -75,23 +93,24 @@ const HomePagePage = () => {
                     Contact
                   </Text>
                 </div>
-                <Img
-                  className="h-[22px] mb-2 w-[22px]"
-                  src="images/img_info.svg"
-                  alt="info"
-                />
               </div>
+            </div>
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Search..."
+                className="p-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                onKeyPress={handleKeyPress}
+              />
               <Img
-                className="absolute h-[29px] right-[6%] top-[0]"
-                src="images/img_whatsapp.svg"
-                alt="whatsapp"
+                className="absolute h-5 right-2 top-2 cursor-pointer"
+                src="images/img_search.svg"
+                alt="search"
+                onClick={handleSearch}
               />
             </div>
-            <Img
-              className="h-5 md:ml-[0] ml-[41px] md:mt-0 mt-[5px]"
-              src="images/img_rewind.svg"
-              alt="rewind"
-            />
           </div>
           <div className="flex flex-col font-inter justify-start w-full">
             <Line className="bg-black-900_19 h-px w-full" />
@@ -215,6 +234,13 @@ const HomePagePage = () => {
                 <div className="bg-light_blue-50 h-[600px] md:mt-0 my-5 md:px-5 rotate-[180deg] rounded-br-[30px] rounded-tr-[30px] w-[3%]"></div>
               </div>
             </div>
+            <CTAPage
+              backgroundImage="url('images/img_group21.svg')"
+              title="Welcome To HomeChef Helper"
+              description="In this website, we focus on helping users improve their cooking skills and create delicious meals at home."
+              buttonLabel="View Recipe"
+              buttonColor="blue_gray_800"
+            />
             <div className="flex flex-col items-center justify-start max-w-7xl mt-[123px] mx-auto md:px-5 w-full">
               <div className="flex flex-col md:gap-10 gap-[76px] items-start justify-start w-full">
                 <div className="flex sm:flex-col flex-row md:gap-10 items-end justify-between w-full">
@@ -849,11 +875,17 @@ const HomePagePage = () => {
                       © 2023 HomeChef Helper
                     </Text>
                   </div>
-                  <Img
-                    className="h-[29px] mb-[5px]"
-                    src="images/img_close.svg"
-                    alt="close"
-                  />
+                  <a
+                    href="https://wa.me/+601110542466" // Replace 1234567890 with the desired phone number
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Img
+                      className="h-[29px] mb-[5px]"
+                      src="images/img_close.svg"
+                      alt="close"
+                    />
+                  </a>
                 </div>
               </div>
             </div>

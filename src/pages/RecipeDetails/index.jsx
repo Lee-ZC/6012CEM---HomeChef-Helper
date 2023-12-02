@@ -236,20 +236,18 @@ const RecipeDetailsPage = () => {
                 <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between mt-16 w-full">
                   <div className="flex md:flex-1 flex-col items-center justify-start w-[66%] md:w-full">
                     <div className="h-[600px] relative w-full">
-                      <Img
+                      <iframe
                         className="h-[600px] m-auto object-cover rounded-[30px] w-full"
-                        src="images/img_image26.png"
-                        alt="imageTwentySix"
-                      />
-                      <div className="absolute bg-white-A700_cc flex flex-col h-max inset-[0] items-center justify-center m-auto p-11 md:px-10 sm:px-5 rounded-[50%] w-[120px]">
-                        <Img
-                          className="h-8 rounded-sm w-8"
-                          src="images/img_overflowmenu_blue_gray_900.svg"
-                          alt="overflowmenu"
-                        />
-                      </div>
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/096Za7YzggI"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allowFullScreen
+                      ></iframe>
                     </div>
                   </div>
+
                   <div className="bg-light_blue-50_01 flex md:flex-1 flex-col items-start justify-start p-[30px] sm:px-5 rounded-[30px] w-[32%] md:w-full">
                     <Text
                       className="text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[-0.96px]"
@@ -360,24 +358,19 @@ const RecipeDetailsPage = () => {
                     <Text
                       className="leading-[28.00px] mt-[166px] text-base text-black-900_99 text-center w-[99%] sm:w-full"
                       size="txtInterRegular16"
-                    >
-                      adipiscing elit, sed do eiusmod tempor incididunt ut
-                      labore et dolore magna aliqua.{" "}
-                    </Text>
+                    ></Text>
                   </div>
                 </div>
                 <Text
                   className="leading-[28.00px] mt-20 text-base text-black-900_99 w-full"
                   size="txtInterRegular16"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Kampung Fried Rice, also known as Nasi Goreng Kampung, is a
+                  popular and flavorful Malaysian and Indonesian dish. "Kampung"
+                  refers to a traditional village, and this fried rice dish is
+                  often associated with the rustic, homely flavors of village
+                  cooking. It's a delicious and comforting dish that is commonly
+                  enjoyed for breakfast, lunch, or dinner.
                 </Text>
               </div>
             </div>
@@ -410,7 +403,8 @@ const RecipeDetailsPage = () => {
                           className="line-through mt-1.5 text-base text-black-900_48"
                           size="txtInterRegular16Black90048"
                         >
-                          Lorem ipsum dolor sit amet
+                          Cooked jasmine or basmati rice (preferably day-old
+                          rice for better texture)
                         </Text>
                       </div>
                       <Line className="bg-black-900_19 h-px w-full" />
@@ -422,7 +416,8 @@ const RecipeDetailsPage = () => {
                     inputClassName="h-6 mr-[5px] outline outline-[1px] outline-gray-300_01 w-6"
                     checked={false}
                     name="loremipsumdolorThree"
-                    label="Lorem ipsum dolor sit amet"
+                    label="Chicken, shrimp, or a combination of both (diced or minced)
+                    "
                     id="Loremipsumdolorsitamet"
                   ></Radio>
                   <Line className="bg-black-900_19 h-px mt-[30px] w-full" />
@@ -432,7 +427,8 @@ const RecipeDetailsPage = () => {
                     inputClassName="h-6 mr-[5px] outline outline-[1px] outline-gray-300_01 w-6"
                     checked={false}
                     name="loremipsumdolorFive"
-                    label="Lorem ipsum dolor sit amet"
+                    label="Shallots, garlic, and onions (finely chopped)
+                    "
                     id="Loremipsumdolorsitamet2"
                   ></Radio>
                   <Line className="bg-black-900_19 h-px mt-[30px] w-full" />
@@ -442,7 +438,8 @@ const RecipeDetailsPage = () => {
                     inputClassName="h-6 mr-[5px] outline outline-[1px] outline-gray-300_01 w-6"
                     checked={false}
                     name="loremipsumdolorSeven"
-                    label="Lorem ipsum dolor sit amet"
+                    label="Chilies (optional, for heat)
+                    "
                     id="Loremipsumdolorsitamet3"
                   ></Radio>
                   <Line className="bg-black-900_19 h-px mt-[30px] w-full" />
@@ -452,7 +449,8 @@ const RecipeDetailsPage = () => {
                     inputClassName="h-6 mr-[5px] outline outline-[1px] outline-gray-300_01 w-6"
                     checked={false}
                     name="loremipsumdolorNine"
-                    label="Lorem ipsum dolor sit amet"
+                    label="Vegetables such as carrots, peas, and green beans (diced)
+                    "
                     id="Loremipsumdolorsitamet4"
                   ></Radio>
                   <Line className="bg-black-900_19 h-px mt-[30px] w-full" />
@@ -470,7 +468,8 @@ const RecipeDetailsPage = () => {
                     inputClassName="h-6 mr-[5px] outline outline-[1px] outline-gray-300_01 w-6"
                     checked={false}
                     name="loremipsumdolorEleven"
-                    label="Lorem ipsum dolor sit amet"
+                    label="Soy sauce
+                    "
                     id="Loremipsumdolorsitamet5"
                   ></Radio>
                   <Line className="bg-black-900_19 h-px w-full" />
@@ -480,7 +479,8 @@ const RecipeDetailsPage = () => {
                     inputClassName="h-6 mr-[5px] outline outline-[1px] outline-gray-300_01 w-6"
                     checked={false}
                     name="loremipsumdolorThirteen"
-                    label="Lorem ipsum dolor sit amet"
+                    label="Fish sauce
+                    "
                     id="Loremipsumdolorsitamet6"
                   ></Radio>
                   <Line className="bg-black-900_19 h-px w-full" />
@@ -490,7 +490,7 @@ const RecipeDetailsPage = () => {
                     inputClassName="h-6 mr-[5px] outline outline-[1px] outline-gray-300_01 w-6"
                     checked={false}
                     name="loremipsumdolorFifteen"
-                    label="Lorem ipsum dolor sit amet"
+                    label="Kecap manis (sweet soy sauce)"
                     id="Loremipsumdolorsitamet7"
                   ></Radio>
                   <Line className="bg-black-900_19 h-px w-full" />
@@ -502,7 +502,7 @@ const RecipeDetailsPage = () => {
                     className="md:text-3xl sm:text-[28px] text-[32px] text-black-900 tracking-[-1.28px]"
                     size="txtInterSemiBold32"
                   >
-                    Other Recipe
+                    Recommend Recipe
                   </Text>
                   <List
                     className="flex flex-col gap-6 items-center w-full"
@@ -633,14 +633,7 @@ const RecipeDetailsPage = () => {
               <Text
                 className="leading-[26.00px] ml-12 md:ml-[0] mt-6 text-base text-black-900_99 tracking-[-0.32px] w-[95%] sm:w-full"
                 size="txtInterRegular16"
-              >
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                non numquam eius modi tempora incidunt ut labore et dolore
-                magnam aliquam quaerat voluptatem.
-              </Text>
+              ></Text>
               <Img
                 className="h-[400px] sm:h-auto ml-12 md:ml-[0] mt-12 object-cover rounded-[20px] w-[95%] md:w-full"
                 src="images/img_rectangle23.png"
@@ -649,14 +642,7 @@ const RecipeDetailsPage = () => {
               <Text
                 className="leading-[26.00px] ml-12 md:ml-[0] mt-12 text-base text-black-900_99 tracking-[-0.32px] w-[95%] sm:w-full"
                 size="txtInterRegular16"
-              >
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                non numquam eius modi tempora incidunt ut labore et dolore
-                magnam aliquam quaerat voluptatem.
-              </Text>
+              ></Text>
               <Line className="bg-black-900_19 h-px mt-12 w-full" />
               <Radio
                 value="Lunch"
@@ -670,14 +656,7 @@ const RecipeDetailsPage = () => {
               <Text
                 className="leading-[26.00px] ml-12 md:ml-[0] mt-[23px] text-base text-black-900_99 tracking-[-0.32px] w-[95%] sm:w-full"
                 size="txtInterRegular16"
-              >
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                non numquam eius modi tempora incidunt ut labore et dolore
-                magnam aliquam quaerat voluptatem.
-              </Text>
+              ></Text>
               <Line className="bg-black-900_19 h-px mt-12 w-full" />
               <Radio
                 value="3Dinner"
@@ -685,20 +664,13 @@ const RecipeDetailsPage = () => {
                 inputClassName="h-6 mr-[5px] outline outline-[1px] outline-gray-300_01 w-6"
                 checked={false}
                 name="dinner"
-                label="3 Dinner  "
+                label="Dinner  "
                 id="3Dinner"
               ></Radio>
               <Text
                 className="leading-[26.00px] ml-12 md:ml-[0] mt-6 text-base text-black-900_99 tracking-[-0.32px] w-[95%] sm:w-full"
                 size="txtInterRegular16"
-              >
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                non numquam eius modi tempora incidunt ut labore et dolore
-                magnam aliquam quaerat voluptatem.
-              </Text>
+              ></Text>
               <Line className="bg-black-900_19 h-px mt-12 w-full" />
             </div>
             <div className="flex flex-col items-center justify-start mt-[81px] w-full">

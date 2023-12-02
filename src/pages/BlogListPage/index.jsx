@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Line, List, Text } from "components";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const BlogListPagePage = () => {
   const navigate = useNavigate();
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [placeholder, setPlaceholder] = useState("Select Date");
+
+  const handleDateChange = (date) => {
+    // Implement your logic to handle the selected date and filter content
+    setSelectedDate(date);
+  };
 
   return (
     <>
@@ -94,6 +103,7 @@ const BlogListPagePage = () => {
               <Line className="absolute bg-black-900_19 h-px inset-[0] justify-center m-auto w-full" />
             </div>
           </div>
+
           <div className="flex flex-col font-inter items-center justify-start mt-[84px] md:px-5 w-[58%] md:w-full">
             <Text
               className="md:text-5xl text-[64px] text-black-900 text-center tracking-[-2.56px]"
@@ -125,15 +135,38 @@ const BlogListPagePage = () => {
                 Search
               </Button>
             </div>
+            <br />
+            <DatePicker
+              selected={selectedDate}
+              onChange={(date) => setSelectedDate(date)}
+              customInput={
+                <div
+                  style={{
+                    backgroundColor: "#000000",
+                    color: selectedDate ? "#fff" : "#fff",
+                    borderColor: "#3498db",
+                    padding: "8px",
+                    borderRadius: "4px",
+                    outline: "none",
+                    fontSize: "14px",
+                    textAlign: "center",
+                    display: "flex", // Center horizontally
+                    justifyContent: "center", // Center vertically
+                  }}
+                >
+                  {selectedDate
+                    ? selectedDate.toLocaleDateString()
+                    : "Select Date"}
+                </div>
+              }
+            />
           </div>
+
           <div className="flex flex-col font-inter items-center justify-start max-w-7xl mt-[31px] mx-auto md:px-5 w-full">
             <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
+              {/* Here */}
+
               <div className="flex md:flex-1 flex-col gap-[47px] justify-start w-[66%] md:w-full">
-                <Img
-                  className="h-[42px] md:h-auto md:ml-[0] ml-[468px] object-cover w-[42%]"
-                  src="images/img_image34.png"
-                  alt="imageThirtyFour"
-                />
                 <List
                   className="flex flex-col gap-8 items-center w-full"
                   orientation="vertical"
@@ -440,6 +473,8 @@ const BlogListPagePage = () => {
                   </div>
                 </List>
               </div>
+
+              {/* Here */}
               <div className="flex md:flex-1 flex-col md:gap-10 gap-20 items-center justify-start md:mt-0 mt-[92px] w-[32%] md:w-full">
                 <div className="flex flex-col gap-7 items-start justify-start w-full">
                   <Text
@@ -567,6 +602,7 @@ const BlogListPagePage = () => {
                 </div>
               </div>
             </div>
+
             <div className="flex sm:flex-col flex-row gap-4 items-center justify-center mt-20 w-[43%] md:w-full">
               <Button
                 className="cursor-pointer font-bold h-16 leading-[normal] text-center text-lg tracking-[-0.36px] w-16"

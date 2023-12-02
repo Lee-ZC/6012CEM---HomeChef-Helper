@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { Button, Img, Line, Text } from "components";
 
 import "react-circular-progressbar/dist/styles.css";
+import ChartComponent from "../../components/ChartComponent "; // Adjust the path based on your file structure
+import DonutChartComponent from "../../components/DonutChartComponent"; // Adjust the path based on your file structure
 
 const AdminDashboardPage = () => {
   const navigate = useNavigate();
@@ -120,126 +122,28 @@ const AdminDashboardPage = () => {
                   </div>
                 </Button>
               </div>
-
+              {/* here */}
               <div className="bg-white-A700 flex md:flex-1 flex-col items-center justify-start p-[11px] rounded-[14px] w-[71%] md:w-full">
                 <div className="flex flex-col justify-start mb-[42px] mt-1.5 w-full">
                   <div className="flex flex-col gap-3.5 items-start justify-start md:ml-[0] ml-[22px]">
-                    <Text
-                      className="text-black-900 text-xl tracking-[0.20px]"
-                      size="txtRobotoMedium20Black900"
-                    >
-                      Recipe Submitted{" "}
-                    </Text>
-                    <Text
-                      className="text-base text-blue_gray-400 tracking-[0.16px]"
-                      size="txtRobotoRegular16"
-                    >
-                      Type of recipe
-                    </Text>
+                    {/* Your existing code... */}
+                    <p>Total Recipe Submitted Over Year</p>
                   </div>
                   <div className="flex sm:flex-col flex-row sm:gap-10 items-center justify-between mt-[22px] w-full">
                     <Img
                       className="h-[21px]"
                       src="images/img_arrowleft.svg"
-                      alt="arrowleft"
+                      alt="arrowright"
+                      style={{ filter: "brightness(0) invert(1)" }}
                     />
                     <div className="flex flex-col items-center justify-start">
-                      <div className="flex sm:flex-col flex-row gap-[11px] items-start justify-between w-full">
-                        <div className="flex sm:flex-1 flex-col items-center justify-start sm:mt-0 mt-[33px] w-[91%] sm:w-full">
-                          <div className="flex flex-col relative w-full">
-                            <div className="md:h-[122px] h-[172px] m-auto w-full">
-                              <div className="absolute md:h-[122px] h-[164px] inset-x-[0] mx-auto top-[0] w-full">
-                                <div className="absolute flex flex-col gap-[34px] inset-x-[0] items-center justify-start mx-auto top-[0] w-full">
-                                  <div className="flex h-[87px] justify-end relative w-full">
-                                    <Line className="absolute bg-blue_gray-400 h-px inset-x-[0] mx-auto top-[0] w-full" />
-                                    <Line className="bg-blue_gray-400 h-px mb-[29px] mt-auto mx-auto w-full" />
-                                    <Img
-                                      className="absolute h-[87px] inset-[0] justify-center m-auto"
-                                      src="images/img_vector.svg"
-                                      alt="vector"
-                                    />
-                                  </div>
-                                  <Line className="bg-blue_gray-400 h-px w-[98%]" />
-                                </div>
-                                <Img
-                                  className="absolute bottom-[0] h-[107px] inset-x-[0] mx-auto"
-                                  src="images/img_vector_teal_300.svg"
-                                  alt="vector_One"
-                                />
-                              </div>
-                              <div
-                                className="absolute bg-cover bg-no-repeat bottom-[0] flex flex-col h-20 inset-x-[0] items-center justify-end mx-auto pt-[79px] w-full"
-                                style={{
-                                  backgroundImage:
-                                    "url('images/img_group3.svg')",
-                                }}
-                              >
-                                <Line className="bg-blue_gray-400 h-0.5 w-full" />
-                              </div>
-                            </div>
-                            <Line className="bg-blue_gray-400 h-[7px] ml-[69px] mt-[-0.9px] rotate-[-90deg] w-0.5 z-[1]" />
-                            <Line className="bg-blue_gray-400 h-[7px] ml-[182px] mt-[-0.9px] rotate-[-90deg] w-0.5 z-[1]" />
-                            <Line className="bg-blue_gray-400 h-[7px] ml-auto mr-[177px] mt-[-0.9px] rotate-[-90deg] w-0.5 z-[1]" />
-                            <Line className="bg-blue_gray-400 h-[7px] ml-auto mr-16 mt-[-0.9px] rotate-[-90deg] w-0.5 z-[1]" />
-                          </div>
-                          <div className="flex flex-row items-center justify-between mt-0.5 w-4/5 md:w-full">
-                            <Text
-                              className="text-base text-center text-gray-800 tracking-[0.16px]"
-                              size="txtRobotoRegular16Gray800"
-                            >
-                              2016
-                            </Text>
-                            <Text
-                              className="text-base text-center text-gray-800 tracking-[0.16px]"
-                              size="txtRobotoRegular16Gray800"
-                            >
-                              2017
-                            </Text>
-                            <Text
-                              className="text-base text-center text-gray-800 tracking-[0.16px]"
-                              size="txtRobotoRegular16Gray800"
-                            >
-                              2018
-                            </Text>
-                            <Text
-                              className="text-base text-center text-gray-800 tracking-[0.16px]"
-                              size="txtRobotoRegular16Gray800"
-                            >
-                              2019
-                            </Text>
-                          </div>
+                      <div className="flex sm:flex-col flex-row sm:gap-11 items-start justify-between w-full">
+                        <div className="flex sm:flex-1 flex-col items-center justify-start sm:mt-0 mt-[33px] w-[2000%] sm:w-full">
+                          {/* Your existing code... */}
+                          <ChartComponent />
                         </div>
                         <div className="flex flex-col items-start justify-start mb-5">
-                          <Text
-                            className="text-base text-gray-800 tracking-[0.16px]"
-                            size="txtRobotoRegular16Gray800"
-                          >
-                            Total
-                          </Text>
-                          <Text
-                            className="mt-1 text-base text-gray-800 tracking-[0.16px]"
-                            size="txtRobotoRegular16Gray800"
-                          >
-                            707
-                          </Text>
-                          <Text
-                            className="mt-[38px] text-base text-gray-800 tracking-[0.16px]"
-                            size="txtRobotoRegular16Gray800"
-                          >
-                            400
-                          </Text>
-                          <Text
-                            className="mt-10 text-base text-gray-800 tracking-[0.16px]"
-                            size="txtRobotoRegular16Gray800"
-                          >
-                            200
-                          </Text>
-                          <Text
-                            className="mt-[34px] text-base text-gray-800 tracking-[0.16px]"
-                            size="txtRobotoRegular16Gray800"
-                          >
-                            0
-                          </Text>
+                          {/* Your existing code... */}
                         </div>
                       </div>
                     </div>
@@ -247,42 +151,23 @@ const AdminDashboardPage = () => {
                       className="h-[21px]"
                       src="images/img_arrowleft.svg"
                       alt="arrowright"
+                      style={{ filter: "brightness(0) invert(1)" }}
                     />
                   </div>
                   <div className="flex flex-row gap-16 items-center justify-start md:ml-[0] ml-[93px] mt-[18px] w-[58%] md:w-full">
                     <div className="flex flex-row items-start justify-between w-[62%]">
-                      <div className="flex flex-row gap-[11px] items-start justify-start w-[44%]">
-                        <div className="bg-deep_orange-A100 h-3.5 mt-0.5 rounded-[11px] w-[23%]"></div>
-                        <Text
-                          className="text-black-900 text-sm tracking-[0.50px]"
-                          size="txtRobotoRegular14Black900"
-                        >
-                          Breakfasr
-                        </Text>
-                      </div>
-                      <div className="flex flex-row gap-[11px] items-center justify-start w-[33%]">
-                        <div className="bg-teal-300 h-3.5 rounded-[11px] w-[31%]"></div>
-                        <Text
-                          className="text-black-900 text-sm tracking-[0.50px]"
-                          size="txtRobotoRegular14Black900"
-                        >
-                          Lunch
-                        </Text>
-                      </div>
+                      {/* Your existing code... */}
                     </div>
                     <div className="flex flex-row gap-[11px] items-center justify-start w-[21%]">
-                      <div className="bg-deep_purple-A200 h-3.5 rounded-[11px] w-[29%]"></div>
-                      <Text
-                        className="text-black-900 text-sm tracking-[0.50px]"
-                        size="txtRobotoRegular14Black900"
-                      >
-                        Dinner
-                      </Text>
+                      {/* Your existing code... */}
                     </div>
                   </div>
                 </div>
               </div>
+
+              {/* here */}
             </div>
+
             <div className="flex md:flex-col flex-row gap-11 items-start justify-start w-[82%] md:w-full">
               <div className="bg-white-A700 flex flex-col gap-[18px] items-center justify-end mb-[17px] md:mt-0 mt-[420px] p-3 rounded-[14px]">
                 <Text
@@ -298,6 +183,9 @@ const AdminDashboardPage = () => {
                   Version: 1.0.0.11
                 </Text>
               </div>
+
+              {/* Here */}
+
               <div className="bg-white-A700 flex flex-col items-center justify-start p-2 rounded-[14px] w-[62%] md:w-full">
                 <div className="flex flex-col justify-start mb-[88px] mt-[7px] w-[99%] md:w-full">
                   <Text
@@ -311,171 +199,22 @@ const AdminDashboardPage = () => {
                       className="h-6 mt-[136px] w-6"
                       src="images/img_arrowleft.svg"
                       alt="arrowleft_One"
+                      style={{ filter: "brightness(0) invert(1)" }}
                     />
-                    <div className="h-[264px] relative w-[264px]">
-                      <div className="h-[264px] m-auto w-[264px]">
-                        <div className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible">
-                          <CircularProgressbar
-                            className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible"
-                            value={7}
-                            counterClockwise
-                            strokeWidth={14}
-                            styles={{
-                              trail: { strokeWidth: 14, stroke: "#eaab00" },
-                              path: {
-                                strokeLinecap: "square",
-                                height: "100%",
-                                transformOrigin: "center",
-                                transform: "rotate(208deg)",
-                                stroke: "#eaab00",
-                              },
-                            }}
-                          ></CircularProgressbar>
-                        </div>
-                        <div className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible">
-                          <CircularProgressbar
-                            className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible"
-                            value={8}
-                            counterClockwise
-                            strokeWidth={14}
-                            styles={{
-                              trail: { strokeWidth: 14, stroke: "#8d43ff" },
-                              path: {
-                                strokeLinecap: "square",
-                                height: "100%",
-                                transformOrigin: "center",
-                                transform: "rotate(0deg)",
-                                stroke: "#eaab00",
-                              },
-                            }}
-                          ></CircularProgressbar>
-                        </div>
-                        <div className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible">
-                          <CircularProgressbar
-                            className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible"
-                            value={8}
-                            counterClockwise
-                            strokeWidth={14}
-                            styles={{
-                              trail: { strokeWidth: 14, stroke: "#8d43ff" },
-                              path: {
-                                strokeLinecap: "square",
-                                height: "100%",
-                                transformOrigin: "center",
-                                transform: "rotate(0deg)",
-                                stroke: "#eaab00",
-                              },
-                            }}
-                          ></CircularProgressbar>
-                        </div>
-                        <div className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible">
-                          <CircularProgressbar
-                            className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible"
-                            value={8}
-                            counterClockwise
-                            strokeWidth={14}
-                            styles={{
-                              trail: { strokeWidth: 14, stroke: "#8d43ff" },
-                              path: {
-                                strokeLinecap: "square",
-                                height: "100%",
-                                transformOrigin: "center",
-                                transform: "rotate(0deg)",
-                                stroke: "#eaab00",
-                              },
-                            }}
-                          ></CircularProgressbar>
-                        </div>
-                        <div className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible">
-                          <CircularProgressbar
-                            className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible"
-                            value={8}
-                            counterClockwise
-                            strokeWidth={14}
-                            styles={{
-                              trail: { strokeWidth: 14, stroke: "#8d43ff" },
-                              path: {
-                                strokeLinecap: "square",
-                                height: "100%",
-                                transformOrigin: "center",
-                                transform: "rotate(0deg)",
-                                stroke: "#eaab00",
-                              },
-                            }}
-                          ></CircularProgressbar>
-                        </div>
-                        <div className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible">
-                          <CircularProgressbar
-                            className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible"
-                            value={8}
-                            counterClockwise
-                            strokeWidth={14}
-                            styles={{
-                              trail: { strokeWidth: 14, stroke: "#8d43ff" },
-                              path: {
-                                strokeLinecap: "square",
-                                height: "100%",
-                                transformOrigin: "center",
-                                transform: "rotate(0deg)",
-                                stroke: "#eaab00",
-                              },
-                            }}
-                          ></CircularProgressbar>
-                        </div>
-                        <div className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible">
-                          <CircularProgressbar
-                            className="!w-[264px] absolute h-[264px] inset-[0] justify-center m-auto overflow-visible"
-                            value={8}
-                            counterClockwise
-                            strokeWidth={14}
-                            styles={{
-                              trail: { strokeWidth: 14, stroke: "#8d43ff" },
-                              path: {
-                                strokeLinecap: "square",
-                                height: "100%",
-                                transformOrigin: "center",
-                                transform: "rotate(0deg)",
-                                stroke: "#eaab00",
-                              },
-                            }}
-                          ></CircularProgressbar>
-                        </div>
-                      </div>
-                      <Text
-                        className="absolute h-max inset-[0] justify-center leading-[24.00px] m-auto text-base text-black-900 text-center tracking-[0.16px] w-[52%] sm:w-full"
-                        size="txtRobotoRegular16Black900"
-                      >
-                        Total User Account
-                      </Text>
+                    <div className="h-[400px] relative w-[500px]">
+                      <DonutChartComponent />
                     </div>
                     <Img
                       className="h-6 mt-[136px] w-6"
                       src="images/img_arrowleft.svg"
                       alt="arrowright_One"
+                      style={{ filter: "brightness(0) invert(1)" }}
                     />
-                  </div>
-                  <div className="flex flex-row gap-[81px] items-start justify-center ml-24 md:ml-[0] mt-[52px] w-[57%] md:w-full">
-                    <div className="flex flex-row gap-2 items-center justify-start mt-0.5 w-[27%]">
-                      <div className="bg-amber-A700 h-4 rounded-[50%] w-4"></div>
-                      <Text
-                        className="text-black-900 text-sm tracking-[0.50px]"
-                        size="txtRobotoRegular14Black900"
-                      >
-                        Admin
-                      </Text>
-                    </div>
-                    <div className="flex flex-row gap-2 items-center justify-start mb-0.5 w-[42%]">
-                      <div className="bg-purple-300 h-4 rounded-[50%] w-4"></div>
-                      <Text
-                        className="text-black-900 text-sm tracking-[0.50px]"
-                        size="txtRobotoRegular14Black900"
-                      >
-                        Normal user
-                      </Text>
-                    </div>
                   </div>
                 </div>
               </div>
+
+              {/* Here */}
             </div>
           </div>
         </div>

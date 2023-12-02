@@ -21,7 +21,7 @@ const LoginPage = () => {
             className="text-base text-blue_gray-800 text-center"
             size="txtLexendDecaRegular16"
           >
-            Sign in and start managing your candidates!
+            Sign in your account !
           </Text>
           <div className="flex flex-col items-center justify-start w-[300px] md:w-full">
             <Input
